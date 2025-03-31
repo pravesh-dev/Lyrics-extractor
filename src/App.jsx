@@ -11,13 +11,13 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col gap-4 items-center justify-center min-h-screen bg-[#101010] text-white p-4">
       <h1 className="text-2xl font-bold mb-4">Upload a Song</h1>
       <input
         type="file"
         accept="audio/*"
         onChange={handleFileChange}
-        className="mb-4 p-2 border rounded-lg"
+        className="w-52 mb-4 my-2 border rounded-md bg-slate-600"
       />
       {file && (
         <div className="bg-white p-4 rounded-lg shadow-md">
